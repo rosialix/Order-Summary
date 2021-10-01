@@ -1,0 +1,124 @@
+
+body {
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-desktop.svg); 
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 98%);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+.contenedor{
+    background-image: url(images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width:350px;
+    height: 570px;
+    margin-top: 3rem;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+}
+
+.area{
+    width: 90%;
+    height: 65%;
+    margin: 170px auto 0px auto;
+}
+
+.contenido{
+    text-align: center;
+}
+
+.titulo{
+    color: hsl(223, 47%, 23%);
+    font-weight: bold;
+}
+.sub_titulo{
+    color: hsl(224, 23%, 55%);
+    margin-top: -10px;
+}
+
+.list_music{
+    margin-top: 30px;
+    height: 20%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+} 
+
+.music{
+    display: flex;
+    flex-direction:column;
+}
+
+
+.list_desc{
+    width: 70%;
+    display:flex;
+    justify-content: center;
+
+} 
+ .list_desc img{
+     width: 50px;
+     height: 50px;
+      margin: 15px 20px 0 0;
+     /* border:2px solid black; */
+ }
+
+.boton{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    height: 20%;
+}
+
+.box{
+    /* height: 50px; */
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding:20px;
+    margin-bottom : 30px;
+    text-align: center;
+    box-shadow: 0px 6px 10px  hsl(245, 75%, 70%);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width:375px){
+    
+    body {
+        background-image: url(images/pattern-background-mobile.svg); 
+    }
+
+    .contenedor{
+        width:90%;
+        height: 50%;
+    }
+
+    .contenido{
+        margin-top:-10px;
+    }
+
+    .list_music{
+        margin-top: 20px;
+    } 
+
+    .boton{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .box{
+        padding:10px;
+        margin-bottom : 15px;
+        text-align: center;
+        box-shadow: 0px 6px 10px  hsl(245, 75%, 70%);
+    }
+}
